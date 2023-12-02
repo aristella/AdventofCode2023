@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-sed 's/one/oEe/g;s/two/tWo/g;s/three/tHree/g;s/four/fOur/g;s/five/fIve/g;s/six/sXx/g;s/seven/seVen/g;s/eight/eigGt/g;s/nine/nNne/g' ../input | \
-tr 'E' '1' | tr 'W' '2' | tr 'H' '3' | tr 'O' '4' | tr 'I' '5' | tr 'X' '6' | tr 'V' '7' | tr 'G' '8' | tr 'N' '9' | \
+sed 's/one/o1e/g;s/two/t2o/g;s/three/t3ree/g;s/four/f4ur/g;s/five/f5ve/g;s/six/s6x/g;s/seven/se7en/g;s/eight/eig8t/g;s/nine/n9ne/g' ../input | \
 sed 's/[a-z]//g;s/[A-Z]//g' |  \
 sed 's/\(^.\).*\(.$\)/\1\2/g' | \
 sed 's/\(^.$\)/\1\1/' | \
